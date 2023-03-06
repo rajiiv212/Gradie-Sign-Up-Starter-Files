@@ -1,0 +1,152 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bg{
+    background-image: url(Assets/Background0.1.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.side1 {
+   background-color: #013243;
+   width: 350px;
+    height: 450px;
+    position: relative;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius:10px ;
+}
+.side1 h3{
+   font-size: 40px;
+   color: #fff;   
+   position: absolute;
+   top: 40px;
+   left: 110px;
+}
+.side1 p{
+    color: #fff;   
+    opacity: 0.7;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+}
+.side1 img{
+    height: 400px;
+    position: absolute;
+    top:50px;
+    left: 10px;
+}
+
+.side2 {
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    background-color: #fff;
+    width: 350px;
+    height: 450px;
+    padding: 0 55px;
+    border:1px solid #aaa;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius:10px ;
+
+}
+.side2 h3{
+    align-self: self-end;
+    font-size: 40px;
+}
+.side2 form .inputBx{
+  margin-bottom: 20px; 
+}
+.side2 form .inputBx label{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #000;
+    
+}
+.side2 form .inputBx input{
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+.side2 form .remember label{
+    font-weight: 600;
+}
+.side2 form .remember label span{
+    text-decoration: underline;
+    color: #013243;
+    font-weight: 700;
+}
+.side2 form .inputBx input[type="submit"]{
+    background-color: #013243;
+    color:#fff;
+    margin-top: 20px;
+}
+
+
+@media  (max-width: 1024px) {
+    .bg {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .side1 {
+        width: 450px;
+        height: 600px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+   
+    .side1 h3 {
+        font-size: 60px;
+        left: 145px;
+    }
+    .side1 p {
+        top: 120px;
+        left: 75px;
+        font-size: 24px;
+    }
+    .side1 img {
+        height: 550px;
+        left: 4px;
+    } 
+    .side2 {
+        width: 450px;
+        height: 600px;
+        font-size: 25px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+    .side2 h3 {
+       font-size: 60px;
+    }
+    .side2 form .inputBx {
+        margin-bottom: 35px;
+    }
+    .side2 form .inputBx label {
+        font-size: 30px !important;
+    }
+    .side2 form .inputBx input {
+        font-size: 24px;
+    }
+}
